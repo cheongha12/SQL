@@ -27,7 +27,7 @@ select professor_name as PROFESSOR_NAME
     where department_no is null
 ;
 -- 7. 혹시 전산상의 착오로 학과가 지정되어 있지 않은 학생이 있는지 확인하고자 한다. 어떠한 SQL 문장을 사용하면 될 것인지 작성하시오.
---(답 안나옴 -- 오류)
+
 select *
     from tb_student
     where department_no is  null

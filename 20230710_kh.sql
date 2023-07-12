@@ -237,3 +237,7 @@ select emp_id, emp_no,  substr(emp_no,1,7), rpad(substr(emp_no,1,7),14,'*')
 from employee
 ;
 
+select emp_name, salary*12 as "연봉", 
+(salary+(salary*nvl(bonus,0)))*12 as "총수령액", 
+((salary+(salary*nvl(bonus,0)))-(salary*0.03))*12 as "실수령액" 
+    from employee;
