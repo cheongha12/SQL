@@ -30,7 +30,7 @@ select professor_name as PROFESSOR_NAME
 --(답 안나옴 -- 오류)
 select *
     from tb_student
-    where department_no is null
+    where department_no is  null
 ;
 -- 8. 수강신청을 하려고 한다. 선수과목 여부를 확인해야 하는데, 선수과목이 존재하는 과목들은 어떤 과목인지 과목번호를 조회해보시오.
 select class_no as CLASS_NO
